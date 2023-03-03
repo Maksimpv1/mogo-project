@@ -1,0 +1,25 @@
+.head{
+    background-color: black;
+    &__container{
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__items{
+        display: flex;
+        :first-of-type .head__item-icon{
+            margin-right: 30px;
+        }               
+    }
+    &__item{
+        width: 114px;
+        height: 100px;
+        &:nth-child(6){
+        margin-right: 30px;
+    }
+    }
+    
+}
