@@ -1,5 +1,4 @@
 .head{
-    background-color: black;
     &__container{
         max-width: 1170px;
         margin: 0 auto;
@@ -12,14 +11,73 @@
         display: flex;
         :first-of-type .head__item-icon{
             margin-right: 30px;
-        }               
+        }         
     }
     &__item{
         width: 114px;
         height: 100px;
-        &:nth-child(6){
-        margin-right: 30px;
+        a{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #FFFFFF;
+            font-family: @Raleway;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            span:hover{
+                text-align: center;
+                width: 100px;
+                color: #F4BF87;
+                padding-bottom: 5px;
+                border-bottom: 1px solid #F4BF87;
+                transition: 0.5s;
+            }
+        }       
     }
-    }
+    &__logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span{
+            -webkit-transition: 0.5s ease;
+        }
+        span:hover{
+            padding: 20px;
+            transition: 0.5s;
+            border: 1px solid #F4BF87;
+            border-radius: 100%;
+            .head__main-logo path{
+                fill: #F4BF87;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+        }
     
+    }
+    .icon-last{
+        padding-left: 15px;
+    }
+    &__item-icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+        span:hover{
+            padding-bottom: 5px;
+            transition: 0.3s;
+            border-bottom: 1px solid #F4BF87;
+            .header-svg-icon path{
+            fill: #F4BF87;
+            cursor: pointer;
+            transition: 0.1s;
+        }
+        }
+    }   
 }
