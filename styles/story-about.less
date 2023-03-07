@@ -18,7 +18,8 @@
             font-family: @KaushanScript;
             font-weight: 400;
             font-size: 30px;
-            line-height: 44px;            
+            line-height: 44px;  
+            color: #2D3033;          
         }
     }
     &__name{
@@ -31,6 +32,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            color: #2D3033;
         }
         .pure-line{
             margin-top: 24px;
@@ -45,16 +47,36 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 21px;
+            color: #2D3033;
         }
     }
     &__cards{
         display: grid;
         grid-template: repeat( 1, 100%) / repeat(3, minmax(300px,370px)) ;
         gap: 30px;
-        
+               
     }
     &__card{
         transition: 0.3s ease;
+        &:nth-child(1){
+            background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);      
+        }
+        .card-elements{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            span:nth-child(2){
+                color: #FFFFFF;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                margin-top: 30px;
+            }
+        }
     }
     &__card:hover{
         transform: translateY(-20px);

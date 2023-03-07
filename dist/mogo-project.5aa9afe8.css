@@ -43,6 +43,154 @@ textarea,
 select {
   font: inherit;
 }
+.devices {
+  background-image: url('devices-bg.f4193e95.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.devices__shadow {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.devices__container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.devices__wrapper {
+  padding-top: 42px;
+  padding-bottom: 58px;
+}
+.devices__name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.devices__name h3 {
+  color: #2D3033;
+  font-family: "Kaushan Script", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  height: 80px;
+}
+.devices__name h2 {
+  color: #2D3033;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  height: 80px;
+}
+.devices__name .pure-line {
+  margin-top: 24px;
+  margin-bottom: 60px;
+}
+.devices__img-exampl {
+  max-width: 680px;
+  min-height: 520px;
+  margin: 0 auto;
+  position: relative;
+}
+.devices__img-exampl .device__note .device__mobile {
+  position: absolute;
+  z-index: 3;
+  right: -10%;
+  top: 40%;
+}
+.devices__img-exampl .device__note .device__ramka {
+  position: absolute;
+  z-index: 2;
+}
+.devices__img-exampl .device__note .device__note-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin-top: 2px;
+  padding: 20px;
+  z-index: 1;
+}
+.amazing {
+  background-color: #FFFFFF;
+}
+.amazing__container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.amazing__wrapper {
+  padding-top: 42px;
+  padding-bottom: 90px;
+}
+.amazing__name {
+  width: 100%;
+}
+.amazing__name h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kaushan Script", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  height: 80px;
+  color: #2D3033;
+}
+.amazing__title {
+  width: 100%;
+}
+.amazing__title h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  height: 81px;
+  color: #2D3033;
+}
+.amazing__title .pure-line {
+  margin-top: 24px;
+  margin-bottom: 80px;
+}
+.amazing__cards {
+  display: grid;
+  grid-template: repeat(2, 140px) / repeat(3, 1fr);
+  row-gap: 140px;
+  column-gap: 30px;
+}
+.amazing__cards .amazing__card {
+  display: flex;
+}
+.amazing__cards .amazing__card .amazing__card-img {
+  margin-right: 37px;
+}
+.amazing__cards .amazing__card .amazing__card-text h4 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2D3033;
+  width: 100%;
+  transition: 0.1s ease;
+}
+.amazing__cards .amazing__card .amazing__card-text p {
+  padding-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2D3033;
+  width: 100%;
+  transition: 0.1s ease;
+}
+.amazing__cards .amazing__card:hover .amazing__card-text * {
+  color: black;
+  transition: 0.2s;
+}
 .welcom__container {
   max-width: 1170px;
   margin: 0 auto;
@@ -129,6 +277,43 @@ select {
 .pure-line {
   border: 1px solid #F38281;
 }
+.futures {
+  background-color: #95E1D3;
+}
+.futures__container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.futures__cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 250px);
+}
+.futures__card-element {
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.futures__card-element span {
+  font-family: "Kaushan Script", cursive;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+}
+.futures__card-element p {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 42px;
+}
 .head__container {
   max-width: 1170px;
   margin: 0 auto;
@@ -186,7 +371,6 @@ select {
 }
 .head__logo span:hover .head__main-logo path {
   fill: #F4BF87;
-  cursor: pointer;
   transition: 0.3s;
 }
 .head .icon-last {
@@ -232,6 +416,7 @@ select {
   font-weight: 400;
   font-size: 30px;
   line-height: 44px;
+  color: #2D3033;
 }
 .about__name {
   width: 100%;
@@ -244,6 +429,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #2D3033;
 }
 .about__name .pure-line {
   margin-top: 24px;
@@ -258,6 +444,7 @@ select {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  color: #2D3033;
 }
 .about__cards {
   display: grid;
@@ -266,6 +453,25 @@ select {
 }
 .about__card {
   transition: 0.3s ease;
+}
+.about__card:nth-child(1) {
+  background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+}
+.about__card .card-elements {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about__card .card-elements span:nth-child(2) {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 30px;
 }
 .about__card:hover {
   transform: translateY(-20px);

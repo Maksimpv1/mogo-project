@@ -1,0 +1,84 @@
+.amazing{
+    background-color: #FFFFFF;
+    &__container{
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    &__wrapper{
+        padding-top: 42px;
+        padding-bottom: 90px;
+    }
+    &__name{
+        width: 100%;
+        h3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: @KaushanScript;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 44px;
+            height: 80px;
+            color: #2D3033;
+        }
+    }
+    &__title{
+        width: 100%;
+        h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 42px;
+            height: 81px;
+            color: #2D3033;
+        }
+        .pure-line{
+            margin-top: 24px;
+            margin-bottom: 80px;
+        }
+    }
+    &__cards{
+        display: grid;
+        grid-template:repeat(2, 140px) / repeat( 3, 1fr);
+        row-gap: 140px;
+        column-gap: 30px;
+        .amazing__card{
+            display: flex;
+            .amazing__card-img{
+                margin-right: 37px;                    
+            }
+            .amazing__card-text{
+                h4{
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: #2D3033;
+                    width: 100%;
+                    transition: 0.1s ease;
+                }
+                p{
+                    padding-top: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #2D3033;
+                    width: 100%;
+                    transition: 0.1s ease;
+                }
+            }
+            &:hover .amazing__card-text *{
+                color: black;
+                transition: 0.2s;
+            }
+        }        
+    }
+    
+}
