@@ -344,6 +344,16 @@ select {
   cursor: pointer;
   transition: 0.1s;
 }
+.our-team__wrapper {
+  padding: 84px 0;
+}
+.our-team__wrapper .mogo-line {
+  margin-top: 24px;
+  margin-bottom: 44px;
+}
+.our-team__wrapper .discription-centr {
+  margin-bottom: 84px;
+}
 .review-slider {
   background-color: #F8F8F8;
 }
@@ -353,26 +363,27 @@ select {
   align-items: center;
   justify-content: center;
 }
+.review-slider__icon {
+  margin-right: auto;
+}
 .review-slider__main {
   display: flex;
 }
 .review-slider__main .review-main__icon {
-  display: inherit;
-  max-width: 170px;
-  max-height: 170px;
-  border: 1px solid #95E1D3;
-}
-.review-slider__main .review-main__icon div {
-  flex: 1;
   display: flex;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
+  width: 170px;
+  height: 170px;
+  border: 1px solid #95E1D3;
 }
 .review-slider__main .review-main__text {
   margin-right: 60px;
   margin-left: 30px;
 }
 .review-slider__main .review-main__text .review-text__discription p {
+  max-width: 770px;
   color: #A9AFB1;
   font-style: italic;
   font-weight: 500;
