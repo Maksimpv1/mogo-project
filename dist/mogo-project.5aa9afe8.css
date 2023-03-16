@@ -354,6 +354,79 @@ select {
 .our-team__wrapper .discription-centr {
   margin-bottom: 84px;
 }
+.our-team__cards {
+  display: grid;
+  grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+  column-gap: 30px;
+}
+.our-team__cards .our-team__card .card-img-shadow {
+  height: 424px;
+  background-image: url("our-team1.d5f6f845.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  grid-area: auto;
+}
+.our-team__cards .our-team__card .card-img-shadow .our-team__card-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+  opacity: 0;
+  transition: 1s ease;
+}
+.our-team__cards .our-team__card .card-img-shadow .our-team__card-social:hover {
+  opacity: 0.8;
+  transition: 1s;
+  transform: translate(-16px, -16px);
+}
+.our-team__cards .our-team__card .card-img-shadow .our-team__card-social div {
+  width: 42px;
+  height: 42px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+}
+.our-team__cards .our-team__card .card-img-shadow .our-team__card-social div:hover {
+  background-color: #F38281;
+  transition: 0.5s;
+}
+.our-team__cards .our-team__card .card-img-shadow .our-team__card-social div:hover svg path {
+  fill: #FFFFFF;
+  transition: 0.5s;
+}
+.our-team__cards .our-team__card .card-img-shadow .our-team__card-social div svg path {
+  fill: #F38281;
+  transition: 0.5s ease;
+}
+.our-team__cards .our-team__card .team-two {
+  background-image: url("our-team2.45f5c319.png");
+}
+.our-team__cards .our-team__card .team-tree {
+  background-image: url("our-team3.c3ffc657.png");
+}
+.our-team__cards .our-team__card .our-team__card-name {
+  display: flex;
+  justify-content: center;
+}
+.our-team__cards .our-team__card .our-team__card-name h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.our-team__cards .our-team__card .our-team__card-discription {
+  display: flex;
+  justify-content: center;
+}
+.our-team__cards .our-team__card .our-team__card-discription p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
 .review-slider {
   background-color: #F8F8F8;
 }

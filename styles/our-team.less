@@ -8,5 +8,80 @@
         .discription-centr{
             margin-bottom: 84px;
         }
-    }    
+    }
+    &__cards{
+        display:grid;
+        grid-template:repeat(1,1fr) / repeat(3,1fr);
+        column-gap: 30px;
+        .our-team__card{
+            .card-img-shadow{
+                height: 424px;
+                background-image: url("../images/our-team1.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                grid-area: auto;                
+                .our-team__card-social{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;              
+                    background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+                    opacity: 0;
+                    transition: 1s ease;
+                    &:hover{
+                        opacity: 0.8;
+                        transition: 1s;
+                        transform: translate(-16px,-16px);
+                    }
+                    div{
+                        width: 42px;
+                        height: 42px;
+                        background-color: #FFFFFF;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: 0.5s ease;                      
+                        &:hover{
+                            background-color:#F38281;
+                            transition: 0.5s;
+                        }
+                        &:hover svg path{
+                            fill: #FFFFFF;
+                            transition: 0.5s;
+                        }
+                        svg path{
+                            fill: #F38281;
+                            transition: 0.5s ease;
+                        }
+                    }
+                }
+            }
+            .team-two{
+                background-image: url("../images/our-team2.png");
+            }
+            .team-tree{
+                background-image: url("../images/our-team3.png");
+            }
+            .our-team__card-name{
+                display: flex;
+                justify-content: center;
+                h5{
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+            }
+            .our-team__card-discription{
+                display: flex;
+                justify-content: center;
+                p{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+            }
+        }
+    }
 }
