@@ -464,32 +464,34 @@ select {
   transition: 0.5s;
 }
 .our-work__cards .our-work__card .our-work__shadow .shadow-img {
-  position: absolute;
-  left: 48%;
-  top: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 .our-work__cards .our-work__card .our-work__shadow .shadow-img svg path {
   fill: #FFFFFF;
   width: 40px;
   height: 40px;
 }
-.our-work__cards .our-work__card .our-work__shadow h5 {
-  position: absolute;
+.our-work__cards .our-work__card .our-work__shadow .shadow-img h5 {
+  padding-top: 40px;
+  padding-bottom: 24px;
+  margin-bottom: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #FFFFFF;
-  top: 60%;
 }
-.our-work__cards .our-work__card .our-work__shadow p {
-  position: absolute;
+.our-work__cards .our-work__card .our-work__shadow .shadow-img p {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
-  top: 70%;
 }
 .review-slider {
   background-color: #F8F8F8;
