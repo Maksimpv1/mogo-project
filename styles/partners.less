@@ -1,0 +1,24 @@
+.partners{
+    background-color: #F8F8F8;
+    &__wrapper{
+        .partners__social{
+            display: grid;
+            grid-template: repeat(1, 1fr) / repeat( 6, 1fr);
+            .social__img{
+                width: 127px;
+                height: 127px;
+                margin:42px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    transition: 0.5s ease;
+                    &:hover{
+                        scale: 1.1;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
