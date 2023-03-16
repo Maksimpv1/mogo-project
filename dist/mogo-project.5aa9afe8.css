@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 *,
 *::before,
 *::after {
@@ -59,30 +62,7 @@ select {
   padding-top: 42px;
   padding-bottom: 58px;
 }
-.devices__name {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.devices__name h3 {
-  color: #2D3033;
-  font-family: "Kaushan Script", cursive;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 44px;
-  height: 80px;
-}
-.devices__name h2 {
-  color: #2D3033;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 42px;
-  height: 80px;
-}
-.devices__name .pure-line {
+.devices .title-centr .pure-line {
   margin-top: 24px;
   margin-bottom: 60px;
 }
@@ -121,36 +101,7 @@ select {
   padding-top: 42px;
   padding-bottom: 90px;
 }
-.amazing__name {
-  width: 100%;
-}
-.amazing__name h3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Kaushan Script", cursive;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 44px;
-  height: 80px;
-  color: #2D3033;
-}
-.amazing__title {
-  width: 100%;
-}
-.amazing__title h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 42px;
-  height: 81px;
-  color: #2D3033;
-}
-.amazing__title .pure-line {
+.amazing .title-centr .pure-line {
   margin-top: 24px;
   margin-bottom: 80px;
 }
@@ -393,6 +344,151 @@ select {
   cursor: pointer;
   transition: 0.1s;
 }
+.our-team__wrapper {
+  padding: 84px 0;
+}
+.our-team__wrapper .mogo-line {
+  margin-top: 24px;
+  margin-bottom: 44px;
+}
+.our-team__wrapper .discription-centr {
+  margin-bottom: 84px;
+}
+.review-slider {
+  background-color: #F8F8F8;
+}
+.review-slider__wrapper {
+  padding: 42px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.review-slider__icon {
+  margin-right: auto;
+}
+.review-slider__main {
+  display: flex;
+}
+.review-slider__main .review-main__icon {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 170px;
+  border: 1px solid #95E1D3;
+}
+.review-slider__main .review-main__text {
+  margin-right: 60px;
+  margin-left: 30px;
+}
+.review-slider__main .review-main__text .review-text__discription p {
+  max-width: 770px;
+  color: #A9AFB1;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+.review-slider__main .review-main__text .review-text__name {
+  display: flex;
+  align-items: center;
+  margin-top: 21px;
+}
+.review-slider__main .review-main__text .review-text__name span {
+  width: 70px;
+  height: 4px;
+  background-color: #F38281;
+}
+.review-slider__main .review-main__text .review-text__name p {
+  margin-left: 56px;
+  font-family: "Kaushan Script", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+}
+.service__wrapper {
+  padding-top: 42px;
+  padding-bottom: 114px;
+}
+.service .title-centr .mogo-line {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+.service__main {
+  display: grid;
+  grid-template: repeat(1, 1fr)/repeat(2, 1fr);
+  gap: 30px;
+}
+.service__main .service__main-first img {
+  width: 100%;
+}
+.service__main .service__main-second {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 22px;
+}
+.service__main .service__main-second .service__acord-btn {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: #FFFFFF;
+  border: 1px solid #C6CBCD;
+  width: 100%;
+  padding: 25px 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.service__main .service__main-second .service__acord-btn:hover {
+  background-color: #f0efef;
+  transition: 0.3s;
+}
+.service__main .service__main-second .service__acord-btn span {
+  margin-left: 40px;
+}
+.service__main .service__main-second .service__acord-btn .btn-up {
+  margin-left: auto;
+}
+.service__main .service__main-second .service__acord-btn .btn-down {
+  margin-left: auto;
+}
+.service__main .service__main-second .service__acord-panel {
+  display: none;
+  padding: 10px 20px 10px 0px;
+  border: 1px solid #C6CBCD;
+}
+.service__main .service__main-second .service__acord-panel textarea {
+  width: 100%;
+  padding: 20px;
+  resize: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  white-space: normal;
+  background-color: #FFFFFF;
+  border: none;
+  text-align: justify;
+  padding-right: 40px;
+  height: 163px;
+}
+.service__main .service__main-second .service__acord-panel textarea::-webkit-scrollbar {
+  width: 7px;
+  background-color: #F5F5F5;
+}
+.service__main .service__main-second .service__acord-panel textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+}
+.service__main .service__main-second .service__acord-panel textarea::-webkit-scrollbar-thumb {
+  background: #95E1D3;
+}
 .about {
   background-color: #FFFFFF;
 }
@@ -404,47 +500,9 @@ select {
   padding-top: 42px;
   padding-bottom: 108px;
 }
-.about__title {
-  width: 100%;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.about__title h3 {
-  font-family: "Kaushan Script", cursive;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 44px;
-  color: #2D3033;
-}
-.about__name {
-  width: 100%;
-}
-.about__name h2 {
-  height: 80px;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #2D3033;
-}
-.about__name .pure-line {
+.about .title-centr .pure-line {
   margin-top: 24px;
   margin-bottom: 44px;
-}
-.about__discription {
-  width: 100%;
-  margin-bottom: 80px;
-}
-.about__discription p {
-  text-align: center;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #2D3033;
 }
 .about__cards {
   display: grid;
@@ -493,10 +551,46 @@ body {
 .main-bg .main-shadow {
   background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;0,900;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+.name-centr {
+  width: 100%;
+}
+.name-centr h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kaushan Script", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  height: 80px;
+  color: #2D3033;
+}
+.title-centr {
+  width: 100%;
+}
+.title-centr h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  height: 81px;
+  color: #2D3033;
+}
+.discription-centr {
+  width: 100%;
+  margin-bottom: 80px;
+}
+.discription-centr p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2D3033;
+}
 
 
 /*# sourceMappingURL=/mogo-project.5aa9afe8.css.map */
