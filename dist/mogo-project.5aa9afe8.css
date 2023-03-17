@@ -15,6 +15,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 ul[class],
 ol[class],
@@ -265,6 +266,63 @@ select {
   font-size: 24px;
   line-height: 42px;
 }
+.happy-client {
+  background-image: url(happy-bg.7b3e377a.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.happy-client__shadow {
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+.happy-client__wrapper {
+  padding: 42px 0;
+}
+.happy-client__wrapper .mogo-line {
+  margin-top: 24px;
+}
+.happy-client__cards {
+  margin: 42px 0;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  column-gap: 50px;
+  row-gap: 42px;
+}
+.happy-client__cards .happy-client__card {
+  display: flex;
+  justify-content: center;
+}
+.happy-client__cards .happy-client__card .happy-card__img {
+  min-width: 130px;
+  min-height: 130px;
+}
+.happy-client__cards .happy-client__card .happy-client__body {
+  margin-left: 50px;
+}
+.happy-client__cards .happy-client__card .happy-client__body h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2D3033;
+}
+.happy-client__cards .happy-client__card .happy-client__body h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2D3033;
+  margin-top: 14px;
+  margin-bottom: 32px;
+}
+.happy-client__cards .happy-client__card .happy-client__body p {
+  margin-top: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2D3033;
+}
 .head__container {
   max-width: 1170px;
   margin: 0 auto;
@@ -427,6 +485,9 @@ select {
   font-size: 18px;
   line-height: 21px;
 }
+.our-work__wrapper {
+  padding-top: 84px;
+}
 .our-work__wrapper .title-centr h2 {
   margin-bottom: 24px;
 }
@@ -534,11 +595,6 @@ select {
   align-items: center;
   margin-top: 21px;
 }
-.review-slider__main .review-main__text .review-text__name span {
-  width: 70px;
-  height: 4px;
-  background-color: #F38281;
-}
 .review-slider__main .review-main__text .review-text__name p {
   margin-left: 56px;
   font-family: "Kaushan Script", cursive;
@@ -546,6 +602,79 @@ select {
   font-weight: 400;
   font-size: 30px;
   line-height: 44px;
+}
+.comments-slider {
+  background-color: #FFFFFF;
+}
+.comments-slider__wrapper {
+  margin: 84px 0;
+  padding: 42px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.comments-slider__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.comments-slider__main .slider-main__photo {
+  margin-right: 30px;
+  min-width: 150px;
+  min-height: 150px;
+}
+.comments-slider__main .slider-main__body p {
+  color: #A9AFB1;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+.comments-slider__main .slider-main__body .slider-body__person-name {
+  display: flex;
+  align-items: center;
+  margin-top: 21px;
+}
+.comments-slider__main .slider-main__body .slider-body__person-name span {
+  margin-bottom: 20px;
+}
+.comments-slider__main .slider-main__body .slider-body__person-name h5 {
+  margin: 0 0 0 56px;
+  font-family: "Kaushan Script", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+}
+.comments-slider__sw-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+  width: 50px;
+  height: 50px;
+  margin-right: 45px;
+  border-radius: 30%;
+  transition: 0.5s ease;
+}
+.comments-slider__sw-left:hover {
+  transition: 0.5s;
+  box-shadow: -5px 5px 3px rgba(131, 128, 128, 0.37);
+}
+.comments-slider__sw-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  width: 50px;
+  height: 50px;
+  margin-left: 45px;
+  border-radius: 30%;
+  transition: 0.5s ease;
+}
+.comments-slider__sw-right:hover {
+  transition: 0.5s;
+  box-shadow: 5px 5px 3px rgba(131, 128, 128, 0.37);
 }
 .service__wrapper {
   padding-top: 42px;
@@ -751,6 +880,12 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #2D3033;
+}
+.short-span {
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: #F38281;
 }
 
 
