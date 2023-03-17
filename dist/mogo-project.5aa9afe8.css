@@ -220,15 +220,6 @@ select {
   line-height: 42px;
   color: rgba(235, 230, 230, 0.9);
 }
-.mogo-line {
-  width: 170px;
-  height: 2px;
-  border: 1px solid #Ffffff;
-  margin: 0 auto;
-}
-.pure-line {
-  border: 1px solid #F38281;
-}
 .futures {
   background-color: #95E1D3;
 }
@@ -401,6 +392,110 @@ select {
   fill: #F4BF87;
   cursor: pointer;
   transition: 0.1s;
+}
+.map-banner {
+  background-image: url(map.6222c984.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.map-banner__shadow {
+  background-color: #ffffffe3;
+}
+.map-banner__wrapper {
+  padding: 42px 0;
+}
+.map-banner__wrapper .map-banner__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.map-banner__wrapper .title-centr h2 {
+  color: #F38281;
+}
+.map-banner__wrapper .title-centr .mogo-line {
+  margin-top: 24px;
+}
+.our-stories {
+  background-color: #FFFFFF;
+}
+.our-stories__wrapper {
+  padding: 84px 0;
+}
+.our-stories__wrapper .mogo-line {
+  margin-top: 24px;
+}
+.our-stories__cards {
+  margin-top: 42px;
+  display: grid;
+  grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+  column-gap: 30px;
+}
+.our-stories__cards .our-stories__card {
+  position: relative;
+}
+.our-stories__cards .our-stories__card .stories-card__psevdo {
+  top: 30%;
+  left: -15px;
+  position: absolute;
+  background-color: #95E1D3;
+  width: 80px;
+  height: 80px;
+}
+.our-stories__cards .our-stories__card .stories-card__psevdo div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-stories__cards .our-stories__card .stories-card__psevdo div p {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 30px;
+  margin-top: 0;
+  padding-top: 10px;
+}
+.our-stories__cards .our-stories__card .stories-card__psevdo div span {
+  padding-top: 5px;
+  margin-top: 5px;
+  color: #FFFFFF;
+}
+.our-stories__cards .our-stories__card img {
+  width: 100%;
+  height: 100%;
+}
+.our-stories__cards .our-stories__card h5 {
+  margin-top: 30px;
+  color: #2D3033;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.our-stories__cards .our-stories__card p {
+  margin-top: 15px;
+  color: #2D3033;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.our-stories__cards .our-stories__card .stories-card__icons {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.our-stories__cards .our-stories__card .stories-card__icons svg {
+  margin-right: 15px;
+}
+.our-stories__cards .our-stories__card .stories-card__icons span {
+  color: #2D3033;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  margin-right: 40px;
 }
 .our-team__wrapper {
   padding: 84px 0;
@@ -886,6 +981,15 @@ body {
   width: 70px;
   height: 4px;
   background-color: #F38281;
+}
+.mogo-line {
+  width: 170px;
+  height: 2px;
+  border: 1px solid #Ffffff;
+  margin: 0 auto;
+}
+.pure-line {
+  border: 2px solid #F38281;
 }
 
 
