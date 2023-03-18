@@ -12,11 +12,20 @@
     &__wrapper{
         padding-top: 42px;
         padding-bottom: 58px;
+        margin: 0 15px;
+        @media screen and (max-width:1024px){
+            padding-top: 32px;
+            padding-bottom: 38px;
+        }
     }
     .title-centr{
         .pure-line{
             margin-top: 24px;
             margin-bottom: 60px;
+            @media screen and (max-width:1024px){
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
         }
     }
     &__img-exampl{
@@ -24,12 +33,21 @@
         min-height: 520px;
         margin: 0 auto;
         position: relative;
+        @media screen and (max-width:1024px){
+            max-width: 550px;
+            min-height: 420px;
+        }
         .device__note{            
             .device__mobile{
                 position:absolute;
                 z-index: 3;
                 right: -10%;
-                top: 40%;      
+                top: 40%;
+                @media screen and (max-width:1024px){
+                    max-width: 140px;
+                    min-height: 200px;
+                    top: 50%;
+                }      
             }
             .device__ramka{                
                 position: absolute;                

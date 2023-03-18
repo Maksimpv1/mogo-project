@@ -4,10 +4,16 @@
         max-width: 1170px;
         margin: 0 auto;
     }
+    &__wrapper{
+        margin: 0 15px;
+    }
     &__cards{
         display: grid;
         grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(1,250px);
+        @media screen and (max-width:1024px){
+            grid-template-rows: repeat(1,170px);
+        }
     }
     &__card-element{        
         border-left: 1px solid #FFFFFF;
@@ -24,6 +30,10 @@
             font-weight: 700;
             font-size: 64px;
             line-height: 75px;
+            @media screen and (max-width:1024px){
+                font-size: 48px;
+                line-height: 56px
+            }
         }
         p{
             color: #FFFFFF;
@@ -31,6 +41,10 @@
             font-weight: 400;
             font-size: 24px;
             line-height: 42px;
+            @media screen and (max-width:1024px){
+                font-size: 16px;
+                line-height: 32px;
+            }
         }
     }
 }
