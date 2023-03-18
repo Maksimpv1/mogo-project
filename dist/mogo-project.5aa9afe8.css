@@ -151,6 +151,7 @@ select {
   padding-top: 100px;
   width: 100%;
   height: 100%;
+  padding-bottom: 20px;
 }
 .welcom__discription h2 {
   font-family: "Kaushan Script", cursive;
@@ -201,6 +202,26 @@ select {
 .welcom__progress-bars .progress-card__bar progress {
   width: 100%;
 }
+.welcom__progress-bars .progress-card__bar progress[value] {
+  border-radius: 2px;
+  height: 5px;
+  background-color: #4F5A6E;
+}
+.welcom__progress-bars .progress-card__bar progress[value]::-webkit-progress-bar {
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  height: 5px;
+}
+.welcom__progress-bars .progress-card__bar progress[value]::-webkit-progress-value {
+  border-radius: 2px;
+  background-color: #F38281;
+  height: 5px;
+}
+.welcom__progress-bars .progress-card__bar progress[value]::-moz-progress-bar {
+  border-radius: 2px;
+  height: 5px;
+  background-color: #F38281;
+}
 .welcom__progress-bars .progress-card__discrp {
   margin-top: 20px;
 }
@@ -219,6 +240,200 @@ select {
   font-size: 15px;
   line-height: 42px;
   color: rgba(235, 230, 230, 0.9);
+}
+.mogo-foot__wrapper {
+  margin-top: 42px;
+}
+.mogo-foot__cards {
+  padding-top: 35px ;
+  display: grid;
+  grid-template: repeat(1, 1fr)/repeat(3, 370px 470px 270px);
+  column-gap: 30px;
+}
+.mogo-foot__cards .foot-card__main p {
+  margin-top: 50px;
+  color: #C6CBCD;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.mogo-foot__cards .foot-card__main .main-card__discription {
+  width: 100%;
+}
+.mogo-foot__cards .foot-card__main .main-card__discription p {
+  color: #2D3033;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 30px;
+}
+.mogo-foot__cards .foot-card__main .main-card__discription p span {
+  margin-left: 10px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.mogo-foot__cards .foot-card__main .main-card__discription p .follow-black {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  color: #2D3033;
+}
+.mogo-foot__cards .foot-card__main .main-card__discription .footer-main__line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #C6CBCD;
+  margin-top: 20px;
+}
+.mogo-foot__cards .foot-card__main .main-card__social {
+  display: flex;
+  margin-top: 12px;
+  width: 100%;
+}
+.mogo-foot__cards .foot-card__main .main-card__social p {
+  margin-top: 5px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+.mogo-foot__cards .foot-card__main .main-card__social .main-social-icons {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 70%;
+}
+.mogo-foot__cards .foot-card__main .main-card__social .main-social-icons .foot-card__social {
+  margin: 0 auto;
+}
+.mogo-foot__cards .foot-card__main form {
+  margin-top: 50px;
+  max-width: 370px;
+  height: 55px;
+  display: flex;
+}
+.mogo-foot__cards .foot-card__main form input {
+  background-color: #FFFFFF;
+  border: 1px solid #C6CBCD;
+  border-right: 0;
+  height: 100%;
+  width: 100%;
+}
+.mogo-foot__cards .foot-card__main form input::placeholder {
+  color: #C6CBCD;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+.mogo-foot__cards .foot-card__main form button {
+  height: 100%;
+  background-color: #95E1D3;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  border: none;
+  padding: 0 15px;
+  transition: 0.3s ease;
+}
+.mogo-foot__cards .foot-card__main form button:hover {
+  background-color: #95e1d37a;
+  transition: 0.5s;
+  color: #75787a;
+}
+.mogo-foot__cards .foot-card__blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.mogo-foot__cards .foot-card__blog h5 {
+  color: #2D3033;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: auto;
+}
+.mogo-foot__cards .foot-card__blog .foot-blog__card {
+  margin-top: 30px;
+  display: flex;
+}
+.mogo-foot__cards .foot-card__blog .foot-blog__card .blog-card__img {
+  min-width: 170px;
+  margin-right: 30px;
+}
+.mogo-foot__cards .foot-card__blog .foot-blog__card .foot-card__info p {
+  color: #2D3033;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  padding-right: 20px;
+  margin-bottom: 15px;
+}
+.mogo-foot__cards .foot-card__blog .foot-blog__card .foot-card__info span {
+  display: block;
+  color: #2D3033;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+.mogo-foot__cards .foot-card__instagram {
+  display: flex;
+  flex-direction: column;
+}
+.mogo-foot__cards .foot-card__instagram h5 {
+  color: #2D3033;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 16px;
+}
+.mogo-foot__cards .foot-card__instagram .foot-inst__imges {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  margin-top: 26px;
+}
+.mogo-foot__cards .foot-card__instagram .foot-inst__imges img {
+  transition: 0.5s ease;
+}
+.mogo-foot__cards .foot-card__instagram .foot-inst__imges img:hover {
+  scale: 1.1;
+  transition: 0.5s;
+}
+.mogo-foot__cards .foot-card__instagram p {
+  color: #2D3033;
+  margin-top: 35px;
+  border-bottom: 1px solid #C6CBCD;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  width: 110px;
+}
+.mogo-foot hr {
+  margin-top: 42px;
+}
+.mogo-foot .footer__end-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #2D3033;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  padding: 15px 0;
 }
 .futures {
   background-color: #95E1D3;
@@ -243,7 +458,6 @@ select {
   align-items: center;
 }
 .futures__card-element span {
-  font-family: "Kaushan Script", cursive;
   color: #FFFFFF;
   font-style: normal;
   font-weight: 700;
@@ -352,7 +566,7 @@ select {
   color: #F4BF87;
   padding-bottom: 5px;
   border-bottom: 1px solid #F4BF87;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .head__logo {
   display: flex;
@@ -569,6 +783,7 @@ select {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  padding: 25px 0;
 }
 .our-team__cards .our-team__card .our-team__card-discription {
   display: flex;

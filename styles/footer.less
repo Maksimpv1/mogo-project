@@ -1,0 +1,200 @@
+.mogo-foot{
+    &__wrapper{
+        margin-top: 42px;
+    }
+    &__cards{
+        padding-top:35px ;
+        display: grid;
+        grid-template: repeat(1, 1fr)/ repeat(3,370px 470px 270px);
+        column-gap: 30px;
+        .foot-card__main{
+            p{
+                margin-top: 50px;
+                color: #C6CBCD;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+            }
+            .main-card__discription{
+                width: 100%;
+                p{
+                    color: #2D3033;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 30px;
+                    span{
+                        margin-left: 10px;
+                        font-style: italic;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+                    .follow-black{
+                        margin: 0;
+                        font-style: normal;                        
+                        font-weight: 700;
+                        color: #2D3033;
+                    }
+                }
+                .footer-main__line{
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #C6CBCD;
+                    margin-top: 20px;
+                }
+            } 
+           .main-card__social{
+            display: flex;
+            margin-top: 12px;
+            width: 100%;
+                p{
+                    margin-top: 5px;
+                    font-style: italic;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 15px;               
+                }
+                .main-social-icons{
+                    margin-left: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    width: 70%;
+                    .foot-card__social{
+                        margin: 0 auto;
+                    }
+                }
+           }
+           form{
+            margin-top: 50px;
+            max-width: 370px;
+            height: 55px;
+            display: flex;
+                input{
+                    background-color: #FFFFFF;
+                    border: 1px solid #C6CBCD;
+                    border-right: 0;
+                    height: 100%;
+                    width: 100%;
+                    &::placeholder{
+                        color: #C6CBCD;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 21px;
+                        text-align: center;
+                    }
+                }
+                button{
+                    height: 100%;
+                    background-color: #95E1D3;
+                    color: #FFFFFF;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 21px;
+                    border: none;
+                    padding: 0 15px;
+                    transition: 0.3s ease;
+                    &:hover{
+                        background-color: #95e1d37a;
+                        transition: 0.5s;
+                        color: #75787a;
+                    }
+                }                
+           }          
+        }
+        .foot-card__blog{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            h5{
+                color: #2D3033;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 28px;
+                margin-bottom: auto;
+            }
+            .foot-blog__card{
+                margin-top: 30px;
+                display: flex;
+                .blog-card__img{
+                    min-width: 170px;
+                    margin-right: 30px;
+                }
+                .foot-card__info{
+                    p{
+                        color: #2D3033;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 21px;
+                        padding-right: 20px;
+                        margin-bottom: 15px;
+                    }
+                    span{
+                        display: block;
+                        color: #2D3033;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+        .foot-card__instagram{
+            display: flex;
+            flex-direction: column;
+            h5{
+                color: #2D3033;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 28px;
+                padding-bottom: 16px;
+            }
+            .foot-inst__imges{    
+                display: grid;
+                grid-template: repeat(3,1fr) / repeat(3, 1fr);            
+                margin-top: 26px;
+                img{
+                    transition: 0.5s ease;
+                    &:hover{
+                        scale: 1.1;
+                        transition: 0.5s;
+                    }
+                }
+            }
+            p{
+                color: #2D3033;
+                margin-top: 35px;
+                border-bottom: 1px solid #C6CBCD;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 15px;
+                width: 110px;
+            }
+        }
+    }    
+    hr{
+        margin-top: 42px;
+    }
+    .footer__end-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        color: #2D3033;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+        padding: 15px 0;
+    }
+}
