@@ -1,0 +1,76 @@
+.comments-slider{
+    background-color: #FFFFFF;
+    &__wrapper{
+        margin:84px 0;
+        padding: 42px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__main{
+        display: flex;        
+        align-items: center;
+        justify-content: center;
+        .slider-main__photo{
+            margin-right: 30px;
+            min-width: 150px;
+            min-height: 150px;
+        }
+        .slider-main__body{
+            p{
+                color: #A9AFB1;
+                font-style: italic;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+            }
+            .slider-body__person-name{
+                display: flex;
+                align-items: center;
+                margin-top: 21px;
+                span{
+                    margin-bottom: 20px;
+                }
+                h5{
+                    margin: 0 0 0 56px;
+                    font-family: @KaushanScript;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 44px;
+                }
+            }
+            
+        }
+    }
+    &__sw-left{       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 10px;
+        width: 50px;
+        height: 50px;
+        margin-right: 45px;
+        border-radius: 30%;        
+        transition: 0.5s ease;
+        &:hover{
+            transition: 0.5s;
+            box-shadow: -5px 5px 3px rgba(131, 128, 128, 0.37) ;
+        }
+    }
+    &__sw-right{        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 10px;
+        width: 50px;
+        height: 50px;
+        margin-left: 45px;
+        border-radius: 30%;        
+        transition: 0.5s ease;
+        &:hover{
+            transition: 0.5s;
+            box-shadow: 5px 5px 3px rgba(131, 128, 128, 0.37) ;
+        }
+    }
+}
