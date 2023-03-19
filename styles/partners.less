@@ -1,6 +1,7 @@
 .partners{
     background-color: #F8F8F8;
     &__wrapper{
+        margin: 0 15px;
         .partners__social{
             display: grid;
             grid-template: repeat(1, 1fr) / repeat( 6, 1fr);
@@ -11,6 +12,10 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @media screen and(max-width:1024px){
+                    scale: 0.7;
+                    margin:28px auto;
+                }
                 img{
                     transition: 0.5s ease;
                     &:hover{

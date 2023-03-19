@@ -2,8 +2,15 @@
     background-color: #FFFFFF;
     &__wrapper{
         padding: 84px 0;
+        margin: 0 15px;
+        @media screen and(max-width:1024px){
+            padding: 60px 0;
+        }
         .mogo-line{
             margin-top: 24px;
+            @media screen and(max-width:1024px){
+                margin-top: 20px;
+            }
         }        
     }
     &__cards{
@@ -11,6 +18,10 @@
         display: grid;
         grid-template: repeat(1, 1fr) / repeat(3, 1fr);
         column-gap: 30px;
+        @media screen and(max-width:1024px){
+            margin-top: 36px;
+            column-gap: 20px;
+        }
         .our-stories__card{
             position: relative;
             .stories-card__psevdo{
@@ -20,6 +31,12 @@
                 background-color: #95E1D3;
                 width: 80px;
                 height: 80px;
+                @media screen and(max-width:1024px){
+                    top: 25%;
+                    left: -10px;
+                    width: 65px;
+                    height: 65px;
+                }
                 div{
                     display: flex;
                     flex-direction: column;
@@ -32,11 +49,21 @@
                         line-height: 30px;
                         margin-top: 0;
                         padding-top: 10px;
+                        @media screen and(max-width:1024px){
+                            padding-top: 5px;                            
+                            font-size: 26px;
+                            line-height: 28px;
+                        }
                     }
                     span{
                         padding-top:5px;
                         margin-top:5px;
                         color:#FFFFFF;
+                        @media screen and(max-width:1024px){
+                            padding-top:0px;                      
+                            font-size: 16px;
+                            line-height: 18px;
+                        }
                     }
                 }
             }
@@ -51,6 +78,10 @@
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 28px;
+                @media screen and(max-width:1024px){
+                    font-size: 18px;
+                    line-height: 21px;
+                }
 
             }
             p{
@@ -60,11 +91,18 @@
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 21px;
+                @media screen and(max-width:1024px){
+                    font-size: 14px;
+                    line-height: 16px;
+                }
             }
             .stories-card__icons{
                 display: flex;
                 align-items: center;
                 margin-top: 30px;
+                @media screen and(max-width:1024px){
+                    scale: 0.9;
+                }                
                 svg{
                     margin-right: 15px;
                 }
