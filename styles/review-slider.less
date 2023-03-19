@@ -5,25 +5,38 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0 25px;
+        @media screen and (max-width:1024px){
+            padding: 32px 0;            
+        }
     }
     &__icon{
         margin-right: auto;
     }
     &__main{
-        display: flex;
-         
+        display: flex;         
         .review-main__icon{ 
             display: flex;
             flex-grow: 1;
             justify-content:  center;
             align-items: center;
-            width: 170px;
-            height: 170px;
+            min-width: 170px;
+            min-height: 170px;
+            margin-left: 30px;
             border: 1px solid #95E1D3;
+            @media screen and (max-width:1024px){
+                min-width: 115px;
+                min-height: 115px;
+                margin-right: 10px;
+            }
         }
         .review-main__text{            
             margin-right:60px;
             margin-left: 30px;
+            @media screen and (max-width:1024px){
+                margin-right:38px;
+                margin-left: 20px;
+            }
             .review-text__discription{
                 p{
                     max-width: 770px;
@@ -32,17 +45,16 @@
                     font-weight: 500;
                     font-size: 24px;
                     line-height: 28px;
+                    @media screen and (max-width:1024px){
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
                 }
             }
             .review-text__name{
                 display: flex;
                 align-items: center;
                 margin-top: 21px;
-                span{
-                    width: 70px;
-                    height: 4px;
-                    background-color: #F38281;
-                }
                 p{
                     margin-left: 56px;
                     font-family: @KaushanScript;
@@ -50,9 +62,17 @@
                     font-weight: 400;
                     font-size: 30px;
                     line-height: 44px;
+                    @media screen and (max-width:1024px){
+                        font-size: 24px;
+                        line-height: 35px;
+                    }
                 }
             }
         }
     }
-
+    @media screen and(max-width:1024px){
+        svg{
+            scale: 0.7;
+        }        
+    }
 }

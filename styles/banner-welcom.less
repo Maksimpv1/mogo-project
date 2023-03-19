@@ -4,12 +4,11 @@
         margin: 0 auto;
     }
     &__wrapper{
+        margin: 0 15px;
         padding-top: 100px;
         width: 100%;
         height: 100%;
-    }
-    &__center-elemets{
-        
+        padding-bottom: 20px;
     }
     &__discription{
         h2{
@@ -20,6 +19,10 @@
             font-size: 64px;
             line-height: 93px;
             color: #Ffffff;
+            @media screen and (max-width:1024px){
+                font-size: 48px;
+                line-height: 70px;
+            }
         }
     }
     &__title{
@@ -32,13 +35,21 @@
             color: #Ffffff;
             white-space: pre-line;
             padding-bottom: 44px;
+            @media screen and (max-width:1024px){
+                font-size: 96px;
+                line-height: 117px;
+            }
         }
     }
     &__butn{
         margin: 74px auto 116px auto;
         width: 370px;
         height: 78px;
-        
+        @media screen and (max-width:1024px){
+            width: 320px;
+            height: 52px;
+            margin: 50px auto 75px auto;   
+        }
         button{
             background: none;
             border: 1px solid #Ffffff;
@@ -50,6 +61,10 @@
             line-height: 28px;
             width: 100%;
             height: 100%;
+            @media screen and (max-width:1024px){
+                font-size: 18px;
+                line-height: 21px;                
+            }
             &:hover{
                 background-color: rgba(212, 207, 207, 0.445);
                 transition: 0.5s;
@@ -59,12 +74,35 @@
     &__progress-bars{
         display: grid;
         width: 100%;
-        grid-template:repeat(1, 100%) / repeat( 4 , minmax(270px,auto));
+        grid-template:repeat(1, 100%) / repeat( 4 , minmax(150px,22%));
         gap: 30px;
+        @media screen and (max-width:1024px){
+            gap: 20px;
+        }
         .progress-card{
             &__bar{
                 progress{
                     width: 100%;
+                    &[value] {
+                        border-radius: 2px;
+                        height: 5px;
+                        background-color: #4F5A6E;
+                    }
+                    &[value]::-webkit-progress-bar {
+                        border-radius: 2px;
+                        background-color: #FFFFFF;
+                        height: 5px;
+                    }
+                    &[value]::-webkit-progress-value {
+                        border-radius: 2px;
+                        background-color: #F38281;
+                        height: 5px;
+                    }
+                    &[value]::-moz-progress-bar {
+                        border-radius: 2px;
+                        height: 5px;
+                        background-color:#F38281;
+                    }
                 }
             }
             &__discrp{
@@ -76,6 +114,10 @@
                     font-size: 36px;
                     line-height: 42px;
                     color: rgba(235, 230, 230, 0.9);
+                    @media screen and (max-width:1024px){
+                        font-size: 28px;
+                        line-height: 36px;
+                    }
                  }
                  span:nth-child(2){
                     font-family: @Raleway;
@@ -84,17 +126,12 @@
                     font-size: 15px;
                     line-height: 42px;
                     color: rgba(235, 230, 230, 0.9);
+                    @media screen and (max-width:1024px){
+                        font-size: 12px;
+                        line-height: 36px;
+                    }
                  }
             }
         }
     }
-}
-.mogo-line{
-    width: 170px;
-    height: 2px;
-    border: 1px solid #Ffffff;
-    margin:0 auto;
-}
-.pure-line{
-    border: 1px solid #F38281;
 }

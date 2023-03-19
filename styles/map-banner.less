@@ -1,0 +1,41 @@
+.map-banner{
+    background-image: url(../images/map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__shadow{
+        background-color: #ffffffe3;
+    }
+    &__wrapper{
+        padding: 42px 0;
+        @media screen and(max-width:1024px) {
+            padding: 32px 0;           
+        }
+        .map-banner__img{
+            display: flex;
+            align-items: center;
+            justify-content: center;            
+            margin-bottom: 5px;
+            @media screen and(max-width:1024px) {
+                scale: 0.9;         
+            }
+        }
+        .title-centr{
+            h2{
+                color: #F38281;
+                font-weight: 900;
+                font-size: 36px;
+                line-height: 42px;
+                @media screen and(max-width:1024px) {
+                    font-size: 24px;
+                    line-height: 28px;         
+                }
+            }
+            .mogo-line{
+                margin-top: 24px;
+                @media screen and(max-width:1024px) {
+                   margin-top: 10px;            
+                }
+            }
+        }
+    }
+}

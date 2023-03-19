@@ -2,26 +2,42 @@
     &__wrapper{
         padding-top: 42px;
         padding-bottom: 114px;
+        margin: 0 15px;
+        @media screen and (max-width:1024px){
+            padding-top: 72px;
+            padding-bottom: 80px;            
+        }
     }
     .title-centr{
         .mogo-line{
             margin-top: 24px;
             margin-bottom: 40px;
+            @media screen and (max-width:1024px){
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
         }
     }
     &__main{
         display: grid;
         grid-template:repeat(1,1fr)/repeat(2,1fr);
         gap: 30px;
+        @media screen and (max-width:1024px){
+            gap: 20px;
+        }
         .service__main-first{
             img{
                 width: 100%;
+                min-width: 450px;
             }
         }
         .service__main-second{
             display: grid;
             grid-template-columns: repeat(1,1fr);
             column-gap: 22px;
+            @media screen and (max-width:1024px){
+                column-gap: 18px;
+            }
             .service__acord-btn{
                 display: flex;
                 align-items: center;
@@ -49,11 +65,19 @@
                 .btn-down{
                     margin-left: auto;
                 }
+                @media screen and (max-width:1024px){
+                    font-size: 18px;
+                    line-height: 21px;
+                    padding: 18px 10px;
+                }
             }
             .service__acord-panel{
                 display: none;
                 padding: 10px 20px 10px 0px;                
                 border: 1px solid #C6CBCD;
+                @media screen and (max-width:1024px){
+                    padding: 5px 10px 5px 0px;
+                }
                 textarea{
                     width: 100%;
                     padding: 20px;
@@ -80,9 +104,20 @@
                     &::-webkit-scrollbar-thumb {
                         background: #95E1D3; 
                     }
+                    @media screen and (max-width:1024px){
+                        padding: 10px;
+                        font-size: 14px;
+                        line-height: 16px;
+                        height: 140px;
+                    }
                 }
             }
         }
 
+    }
+    @media screen and(max-width:1024px){
+        svg{
+            scale: 0.8;
+        }        
     }
 }
