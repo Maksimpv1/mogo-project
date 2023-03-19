@@ -1,25 +1,42 @@
 .our-team{
     &__wrapper{
         padding: 84px 0;
+        margin: 0 15px;
+        @media screen and (max-width:1024px) {
+            padding: 55px 0;                
+        }   
         .mogo-line{
             margin-top: 24px;
-            margin-bottom: 44px;        
+            margin-bottom: 44px;
+            @media screen and (max-width:1024px) {
+                margin-top: 20px;
+                margin-bottom: 40px;                
+            }        
         }
         .discription-centr{
             margin-bottom: 84px;
+            @media screen and (max-width:1024px) {
+                margin-bottom: 64px;              
+            } 
         }
     }
     &__cards{
         display:grid;
         grid-template:repeat(1,1fr) / repeat(3,1fr);
         column-gap: 30px;
+        @media screen and (max-width:1024px){
+            column-gap:20px;           
+        }
         .our-team__card{
             .card-img-shadow{
                 height: 424px;
                 background-image: url("../images/our-team1.png");
                 background-repeat: no-repeat;
-                background-size: 100%;
-                grid-area: auto;                
+                background-size: cover;
+                grid-area: auto;
+                @media screen and (max-width:1024px){
+                    height: 360px;
+                }                
                 .our-team__card-social{
                     display: flex;
                     align-items: center;
@@ -40,7 +57,15 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        transition: 0.5s ease;                      
+                        transition: 0.5s ease; 
+                        @media screen and (max-width:1024px){
+                            width: 36px;
+                            height: 36px;
+                            svg path{
+                                scale: 0.8;
+                                transform: translate(2px,5px);
+                            }
+                        }                     
                         &:hover{
                             background-color:#F38281;
                             transition: 0.5s;
@@ -71,6 +96,10 @@
                     font-size: 24px;
                     line-height: 28px;
                     padding: 25px 0;
+                    @media screen and (max-width:1024px){
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
                 }
             }
             .our-team__card-discription{
@@ -81,6 +110,10 @@
                     font-weight: 400;
                     font-size: 18px;
                     line-height: 21px;
+                    @media screen and (max-width:1024px){
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
                 }
             }
         }
