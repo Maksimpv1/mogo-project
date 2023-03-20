@@ -4,11 +4,17 @@
         margin: 0 auto;
     }
     &__wrapper{
+        display: block;
         margin: 0 15px;
         padding-top: 100px;
         width: 100%;
         height: 100%;
-        padding-bottom: 20px;
+        padding-bottom: 20px;        
+        transition: 0.3s ease;
+    }
+    .welcom_active{
+        opacity: 0;
+        transition: 0.3s;
     }
     &__discription{
         h2{
