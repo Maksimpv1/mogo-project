@@ -213,9 +213,16 @@ select {
   padding-bottom: 20px;
   transition: 0.3s ease;
 }
+@media screen and (max-width: 700px) {
+  .welcom__wrapper {
+    padding-top: 60px;
+    margin: 0 5px;
+  }
+}
 .welcom .welcom_active {
   opacity: 0;
   transition: 0.3s;
+  transform: translateX(-100%);
 }
 .welcom__discription h2 {
   font-family: "Kaushan Script", cursive;
@@ -230,6 +237,12 @@ select {
   .welcom__discription h2 {
     font-size: 48px;
     line-height: 70px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .welcom__discription h2 {
+    font-size: 36px;
+    line-height: 52px;
   }
 }
 .welcom__title h1 {
@@ -248,6 +261,13 @@ select {
     line-height: 117px;
   }
 }
+@media screen and (max-width: 700px) {
+  .welcom__title h1 {
+    margin-top: 50px;
+    font-size: 48px;
+    line-height: 59px;
+  }
+}
 .welcom__butn {
   margin: 74px auto 116px auto;
   width: 370px;
@@ -258,6 +278,13 @@ select {
     width: 320px;
     height: 52px;
     margin: 50px auto 75px auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .welcom__butn {
+    width: 280px;
+    height: 50px;
+    margin: 50px auto 50px auto;
   }
 }
 .welcom__butn button {
@@ -278,6 +305,11 @@ select {
     line-height: 21px;
   }
 }
+@media screen and (max-width: 700px) {
+  .welcom__butn button {
+    border: 3px solid #Ffffff;
+  }
+}
 .welcom__butn button:hover {
   background-color: rgba(212, 207, 207, 0.445);
   transition: 0.5s;
@@ -290,6 +322,30 @@ select {
 }
 @media screen and (max-width: 1024px) {
   .welcom__progress-bars {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .welcom__progress-bars {
+    grid-template: repeat(1, 100%) / repeat(4, minmax(50px, 22%));
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .welcom__progress-bars {
+    grid-template: repeat(1, 100%) / repeat(4, minmax(50px, 21%));
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .welcom__progress-bars {
+    grid-template: repeat(1, 100%) / repeat(4, minmax(50px, 20%));
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .welcom__progress-bars {
+    grid-template: repeat(1, 100%) / repeat(4, minmax(50px, 19%));
     gap: 20px;
   }
 }
@@ -333,6 +389,11 @@ select {
     line-height: 36px;
   }
 }
+@media screen and (max-width: 600px) {
+  .welcom__progress-bars .progress-card__discrp span:nth-child(1) {
+    display: none;
+  }
+}
 .welcom__progress-bars .progress-card__discrp span:nth-child(2) {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -345,6 +406,11 @@ select {
   .welcom__progress-bars .progress-card__discrp span:nth-child(2) {
     font-size: 12px;
     line-height: 36px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .welcom__progress-bars .progress-card__discrp span:nth-child(2) {
+    display: none;
   }
 }
 .mogo-foot__wrapper {
@@ -1021,6 +1087,30 @@ select {
   transform: translateX(-100%);
   background: none;
   transition: 0.5s;
+}
+.head .burger-header .burger-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.head .burger-header .burger-wrapper li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+.head .burger-header .burger-wrapper li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  transition: 0.3s ease;
+}
+.head .burger-header .burger-wrapper li a:hover {
+  color: #F4BF87;
+  transition: 0.3s ease;
 }
 .head .burger-header_active {
   transform: translateX(0);
@@ -1864,6 +1954,11 @@ body {
 }
 .main-bg .main-shadow {
   background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+}
+@media screen and (max-width: 500px) {
+  .main-bg {
+    background-image: url(main-small.f927a12e.png);
+  }
 }
 .name-centr {
   width: 100%;
