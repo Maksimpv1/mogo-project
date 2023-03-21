@@ -205,11 +205,24 @@ select {
   margin: 0 auto;
 }
 .welcom__wrapper {
+  display: block;
   margin: 0 15px;
   padding-top: 100px;
   width: 100%;
   height: 100%;
   padding-bottom: 20px;
+  transition: 0.3s ease;
+}
+@media screen and (max-width: 700px) {
+  .welcom__wrapper {
+    padding-top: 60px;
+    margin: 0 5px;
+  }
+}
+.welcom .welcom_active {
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateX(-100%);
 }
 .welcom__discription h2 {
   font-family: "Kaushan Script", cursive;
@@ -224,6 +237,12 @@ select {
   .welcom__discription h2 {
     font-size: 48px;
     line-height: 70px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .welcom__discription h2 {
+    font-size: 36px;
+    line-height: 52px;
   }
 }
 .welcom__title h1 {
@@ -242,6 +261,13 @@ select {
     line-height: 117px;
   }
 }
+@media screen and (max-width: 700px) {
+  .welcom__title h1 {
+    margin-top: 50px;
+    font-size: 48px;
+    line-height: 59px;
+  }
+}
 .welcom__butn {
   margin: 74px auto 116px auto;
   width: 370px;
@@ -252,6 +278,13 @@ select {
     width: 320px;
     height: 52px;
     margin: 50px auto 75px auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .welcom__butn {
+    width: 280px;
+    height: 50px;
+    margin: 50px auto 50px auto;
   }
 }
 .welcom__butn button {
@@ -272,6 +305,11 @@ select {
     line-height: 21px;
   }
 }
+@media screen and (max-width: 700px) {
+  .welcom__butn button {
+    border: 3px solid #Ffffff;
+  }
+}
 .welcom__butn button:hover {
   background-color: rgba(212, 207, 207, 0.445);
   transition: 0.5s;
@@ -284,6 +322,30 @@ select {
 }
 @media screen and (max-width: 1024px) {
   .welcom__progress-bars {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .welcom__progress-bars {
+    grid-template: repeat(1, 100%) / repeat(4, minmax(50px, 22%));
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .welcom__progress-bars {
+    grid-template: repeat(1, 100%) / repeat(4, minmax(50px, 21%));
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .welcom__progress-bars {
+    grid-template: repeat(1, 100%) / repeat(4, minmax(50px, 20%));
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .welcom__progress-bars {
+    grid-template: repeat(1, 100%) / repeat(4, minmax(50px, 19%));
     gap: 20px;
   }
 }
@@ -327,6 +389,11 @@ select {
     line-height: 36px;
   }
 }
+@media screen and (max-width: 600px) {
+  .welcom__progress-bars .progress-card__discrp span:nth-child(1) {
+    display: none;
+  }
+}
 .welcom__progress-bars .progress-card__discrp span:nth-child(2) {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -339,6 +406,11 @@ select {
   .welcom__progress-bars .progress-card__discrp span:nth-child(2) {
     font-size: 12px;
     line-height: 36px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .welcom__progress-bars .progress-card__discrp span:nth-child(2) {
+    display: none;
   }
 }
 .mogo-foot__wrapper {
@@ -848,11 +920,54 @@ select {
   justify-content: space-between;
   margin: 0 15px;
 }
+@media screen and (max-width: 324px) {
+  .head__wrapper {
+    margin: 0 0px;
+  }
+}
 .head__items {
   display: flex;
 }
-.head__items :first-of-type .head__item-icon {
+@media screen and (max-width: 800px) {
+  .head__items {
+    margin-top: 30px;
+  }
+}
+.head__items:first-of-type .head__item-icon {
   margin-right: 30px;
+}
+.head__items .header__burger {
+  display: none;
+  width: 24px;
+  height: 18px;
+  margin-right: 35px;
+}
+@media screen and (max-width: 800px) {
+  .head__items .header__burger {
+    display: block;
+  }
+}
+.head__items .header__burger button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  justify-content: space-between;
+  transition: all ease-in-out 0.3s;
+}
+.head__items .header__burger button:hover {
+  scale: 1.1;
+}
+.head__items .header__burger button span {
+  width: 100%;
+  height: 3px;
+  background: #FFFFFF;
+  transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
 }
 .head__item {
   width: 114px;
@@ -864,6 +979,11 @@ select {
     transition: 0.3s ease;
     width: 95px;
     height: 70px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .head__item {
+    display: none;
   }
 }
 .head__item a {
@@ -908,11 +1028,22 @@ select {
     transition: 0.3s ease;
   }
 }
+@media screen and (max-width: 800px) {
+  .head__logo span {
+    margin-top: 25px;
+  }
+}
 .head__logo span:hover {
   padding: 20px;
   transition: 0.5s;
   border: 1px solid #F4BF87;
   border-radius: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .head__logo span:hover {
+    border: none;
+    padding: 0;
+  }
 }
 .head__logo span:hover .head__main-logo path {
   fill: #F4BF87;
@@ -942,6 +1073,48 @@ select {
   .head__item-icon {
     scale: 0.9;
   }
+}
+@media screen and (max-width: 800px) {
+  .head__item-icon {
+    display: none;
+  }
+}
+.head .burger-header {
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  transform: translateX(-100%);
+  background: none;
+  transition: 0.5s;
+}
+.head .burger-header .burger-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.head .burger-header .burger-wrapper li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+.head .burger-header .burger-wrapper li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  transition: 0.3s ease;
+}
+.head .burger-header .burger-wrapper li a:hover {
+  color: #F4BF87;
+  transition: 0.3s ease;
+}
+.head .burger-header_active {
+  transform: translateX(0);
+  transition: 0.5s;
 }
 .map-banner {
   background-image: url(map.6222c984.png);
@@ -1781,6 +1954,11 @@ body {
 }
 .main-bg .main-shadow {
   background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+}
+@media screen and (max-width: 500px) {
+  .main-bg {
+    background-image: url(main-small.f927a12e.png);
+  }
 }
 .name-centr {
   width: 100%;

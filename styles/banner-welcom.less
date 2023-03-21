@@ -4,11 +4,22 @@
         margin: 0 auto;
     }
     &__wrapper{
+        display: block;
         margin: 0 15px;
         padding-top: 100px;
         width: 100%;
         height: 100%;
-        padding-bottom: 20px;
+        padding-bottom: 20px;        
+        transition: 0.3s ease;
+        @media screen and (max-width:700px){
+            padding-top: 60px;            
+            margin: 0 5px;
+        }
+    }
+    .welcom_active{
+        opacity: 0;
+        transition: 0.3s;        
+        transform: translateX(-100%);
     }
     &__discription{
         h2{
@@ -22,6 +33,10 @@
             @media screen and (max-width:1024px){
                 font-size: 48px;
                 line-height: 70px;
+            }
+            @media screen and (max-width:700px){
+                font-size: 36px;
+                line-height: 52px;
             }
         }
     }
@@ -39,6 +54,11 @@
                 font-size: 96px;
                 line-height: 117px;
             }
+            @media screen and (max-width:700px){
+                margin-top: 50px;
+                font-size: 48px;
+                line-height: 59px;
+            }
         }
     }
     &__butn{
@@ -49,6 +69,11 @@
             width: 320px;
             height: 52px;
             margin: 50px auto 75px auto;   
+        }
+        @media screen and (max-width:700px){
+            width: 280px;
+            height: 50px;
+            margin: 50px auto 50px auto;   
         }
         button{
             background: none;
@@ -64,6 +89,9 @@
             @media screen and (max-width:1024px){
                 font-size: 18px;
                 line-height: 21px;                
+            } 
+            @media screen and (max-width:700px){                
+                border: 3px solid #Ffffff;   
             }
             &:hover{
                 background-color: rgba(212, 207, 207, 0.445);
@@ -77,8 +105,25 @@
         grid-template:repeat(1, 100%) / repeat( 4 , minmax(150px,22%));
         gap: 30px;
         @media screen and (max-width:1024px){
+            gap: 20px;            
+        }       
+        @media screen and (max-width:700px){
+            grid-template:repeat(1, 100%) / repeat(4, minmax(50px, 22%));
+            gap: 20px;
+        }       
+        @media screen and (max-width:580px){
+            grid-template:repeat(1, 100%) / repeat(4, minmax(50px, 21%));
             gap: 20px;
         }
+        @media screen and (max-width:440px){
+            grid-template:repeat(1, 100%) / repeat(4, minmax(50px, 20%));
+            gap: 20px;
+        }
+        @media screen and (max-width:360px){
+            grid-template:repeat(1, 100%) / repeat(4, minmax(50px, 19%));
+            gap: 20px;
+        }
+       
         .progress-card{
             &__bar{
                 progress{
@@ -118,6 +163,9 @@
                         font-size: 28px;
                         line-height: 36px;
                     }
+                    @media screen and (max-width:600px){
+                        display: none;
+                    }
                  }
                  span:nth-child(2){
                     font-family: @Raleway;
@@ -129,6 +177,9 @@
                     @media screen and (max-width:1024px){
                         font-size: 12px;
                         line-height: 36px;
+                    }                    
+                    @media screen and (max-width:600px){
+                        display: none;
                     }
                  }
             }
