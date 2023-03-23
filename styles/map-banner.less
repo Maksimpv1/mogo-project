@@ -2,6 +2,9 @@
     background-image: url(../images/map.png);
     background-repeat: no-repeat;
     background-size: cover;
+    @media screen and(max-width:400px) {       
+        background-image: url(../images/map-small.png);   
+    }
     &__shadow{
         background-color: #ffffffe3;
     }
@@ -32,9 +35,6 @@
             }
             .mogo-line{
                 margin-top: 24px;
-                @media screen and(max-width:1024px) {
-                   margin-top: 10px;            
-                }
             }
         }
     }

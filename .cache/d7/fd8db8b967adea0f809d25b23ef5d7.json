@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"id":"b6ga","dependencies":[{"name":"D:\\учеба\\Курсы\\mogo-project\\package.json","includedInParent":true,"mtime":1679382149396}],"generated":{"js":"module.exports=\"6fa81a8b6c08159353ef53c2cd48219b.png\";"},"sourceMaps":null,"error":null,"hash":"4e661de0cc335486694f67b992d9dc1c","cacheData":{"env":{}}}
+=======
+{"id":"b6ga","dependencies":[{"name":"D:\\учеба\\Курсы\\mogo-project\\package.json","includedInParent":true,"mtime":1679382998711}],"generated":{"js":"module.exports=\"6fa81a8b6c08159353ef53c2cd48219b.png\";"},"sourceMaps":null,"error":null,"hash":"4e661de0cc335486694f67b992d9dc1c","cacheData":{"env":{}}}
+>>>>>>> main

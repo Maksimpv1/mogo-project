@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"id":"Xvng","dependencies":[{"name":"D:\\учеба\\Курсы\\mogo-project\\package.json","includedInParent":true,"mtime":1679382149396}],"generated":{"js":"module.exports=\"5ef9e0ef6179fe42830719694a67a92f.png\";"},"sourceMaps":null,"error":null,"hash":"8a814e386b3eb601b0b0ab10eb127b67","cacheData":{"env":{}}}
+=======
+{"id":"Xvng","dependencies":[{"name":"D:\\учеба\\Курсы\\mogo-project\\package.json","includedInParent":true,"mtime":1679382998711}],"generated":{"js":"module.exports=\"5ef9e0ef6179fe42830719694a67a92f.png\";"},"sourceMaps":null,"error":null,"hash":"8a814e386b3eb601b0b0ab10eb127b67","cacheData":{"env":{}}}
+>>>>>>> main

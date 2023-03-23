@@ -10,7 +10,7 @@
         display: grid;
         grid-template: repeat(1, 1fr)/ repeat(3,350px 460px 250px);
         column-gap: 30px;    
-        transition: 0.4s ease;    
+        transition: 0.4s ease;       
         @media screen and(max-width:1150px){            
             padding-top:25px;
             column-gap: 20px;            
@@ -21,16 +21,35 @@
             padding-top:25px;
             column-gap: 20px;            
             grid-template: repeat(1, 1fr)/ repeat(3,270px 400px 230px);
-            transition: 0.4s ease;
+            transition: 0.4s ease;      
         }
-        .foot-card__main{
+        @media screen and(max-width:980px){   
+            grid-template: repeat(1, 1fr)/ repeat(3,250px 350px 200px);
+        }
+        @media screen and(max-width:900px){           
+            grid-template: repeat(1, 1fr)/ repeat(3,200px 300px 180px);
+        }
+        @media screen and(max-width:800px){           
+            grid-template: 370px 1fr 420px / repeat(1,1fr);
+            justify-content: center;
+        }
+        @media screen and(max-width:400px){           
+            grid-template: 370px 330px 420px / repeat(1,1fr);
+            justify-content: center;
+        }
+        .foot-card__main{                   
+            @media screen and(max-width:650px){     
+            justify-content: center;
+            }     
             .main-card__logo{ 
+                width: 100px;
+                margin: 0 auto;
                 svg{
                     transition: 0.4s ease;
                     @media screen and(max-width:1024px){     
                         transform: translateX(-15px);      
                         scale: 0.8;
-                }
+                    }
                 }
             }
             p{
@@ -45,6 +64,10 @@
                     font-size: 14px;
                     line-height: 16px;
                 }
+                @media screen and(max-width:800px){                 
+                    margin-top: 25px;     
+                    text-align: center;
+                }   
             }
             .main-card__discription{
                 width: 100%;
@@ -128,13 +151,23 @@
                 margin-top: 30px;
                 max-width: 315px;
                 height: 40px;
+                margin: 0 auto;
             }
+            @media screen and(max-width:650px){  
+                flex-direction: column;             
+                margin-top: 20px;                
+                height: 100px;
+            }  
                 input{
                     background-color: #FFFFFF;
                     border: 1px solid #C6CBCD;
                     border-right: 0;
                     height: 100%;
                     width: 100%;
+                    @media screen and(max-width:650px){ 
+                        border: 1px solid #C6CBCD;
+                        height: 40px;
+                    }  
                     &::placeholder{
                         color: #C6CBCD;
                         font-style: normal;
@@ -163,6 +196,10 @@
                         font-size: 14px;
                         line-height: 16px;                        
                     }
+                    @media screen and(max-width:650px) {
+                        margin-top: 20px;  
+                        height: 40px;                     
+                    }
                     &:hover{
                         background-color: #95e1d37a;
                         transition: 0.5s;
@@ -177,7 +214,11 @@
             justify-content: end;            
             @media screen and(max-width:1024px) {
                 justify-content: start;
-            }
+            }             
+            @media screen and(max-width:650px) {
+                margin-top: 20px;
+                justify-content: center;                                        
+            }  
             h5{
                 color: #2D3033;
                 font-style: normal;
@@ -190,12 +231,18 @@
                     line-height: 21px;
                     margin-bottom: 20px;
                 }
+                @media screen and(max-width:800px) {
+                    text-align: center;
+                }
             }
             .foot-blog__card{
                 margin-top: 30px;
                 display: flex;
                 @media screen and(max-width:1024px) {
                     margin-top: 17px;                                        
+                }          
+                @media screen and(max-width:329px) {
+                    margin-top: 0px;                                        
                 }
                 .blog-card__img{
                     min-width: 170px;
@@ -203,6 +250,11 @@
                     @media screen and(max-width:1024px) {
                         min-width: 130px;
                         margin-right: 20px;                                        
+                    }
+                    @media screen and(max-width:400px) {
+                        min-width: 85px;
+                        min-height: 100%;
+                        
                     }
                 }
                 .foot-card__info{
@@ -216,7 +268,12 @@
                         margin-bottom: 15px;
                         @media screen and(max-width:1024px) {
                             font-size: 14px;
-                            line-height: 16px;                                        
+                            line-height: 16px;                            
+                            margin-bottom: 10px;                                        
+                        }
+                        @media screen and(max-width:600px) {
+                            font-size: 12px;
+                            line-height: 14px;                                        
                         }
                     }
                     span{
@@ -228,7 +285,11 @@
                         line-height: 15px;
                         @media screen and(max-width:1024px) {
                             font-size: 12px;
-                            line-height: 14px;                                        
+                            line-height: 14px;                            
+                            margin-bottom: 10px;                                        
+                        }
+                        @media screen and(max-width:650px) {                           
+                            margin-bottom: 10px;                                        
                         }
                     }
                 }
@@ -237,6 +298,9 @@
         .foot-card__instagram{
             display: flex;
             flex-direction: column;
+            @media screen and(max-width:800px){
+                margin-bottom: 10px;
+            }
             h5{
                 color: #2D3033;
                 font-style: normal;
@@ -248,6 +312,10 @@
                     font-size: 18px;
                     line-height: 21px;
                 }
+                @media screen and(max-width:800px){
+                    margin-top: 30px;
+                    text-align: center;
+                }
             }
             .foot-inst__imges{    
                 display: grid;
@@ -257,8 +325,16 @@
                     margin-top: 20px;
                     grid-template: repeat(3,70px) / repeat(3, 70px); 
                 }
+                @media screen and(max-width:800px){
+                    justify-content: center;
+                    grid-template: repeat(3,90px) / repeat(3, 90px); 
+                }
                 img{
                     transition: 0.5s ease;
+                    @media screen and(max-width:800px){
+                        width: 100%;
+                        height: 100%;
+                    }
                     &:hover{
                         scale: 1.1;
                         transition: 0.5s;
@@ -277,6 +353,10 @@
                 @media screen and(max-width:1024px){
                     font-size: 12px;
                     line-height: 14px;
+                }
+                @media screen and(max-width:800px){
+                    text-align: center;
+                    margin: 35px auto 0 auto;
                 }
             }
         }
@@ -298,5 +378,8 @@
         font-size: 13px;
         line-height: 15px;
         padding: 15px 0;
+        @media screen and(max-width:800px){
+            text-align: center;            
+        }
     }
 }

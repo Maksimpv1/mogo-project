@@ -37,6 +37,16 @@
             max-width: 550px;
             min-height: 420px;
         }
+        @media screen and (max-width:700px){
+            max-width: 550px;
+            min-height: 420px;
+        }        
+        @media screen and (max-width:520px){
+            min-height: 320px;
+        }  
+        @media screen and (max-width:400px){
+            min-height: 320px;
+        }
         .device__note{            
             .device__mobile{
                 position:absolute;
@@ -47,7 +57,26 @@
                     max-width: 140px;
                     min-height: 200px;
                     top: 50%;
-                }      
+                }
+                @media screen and (max-width:700px){
+                    max-width: 120px;
+                    min-height: 180px;
+                    top: 60%;                    
+                    right: 10%;
+                    transition: 0.3s;
+                }        
+                @media screen and (max-width:520px){
+                    max-width: 100px;
+                    min-height: 160px;
+                    top: 50%;                    
+                    right: 10%;
+                }  
+                @media screen and (max-width:400px){
+                    max-width: 86px;
+                    min-height: 160px;
+                    top: 30%;                    
+                    right: 10%;
+                }   
             }
             .device__ramka{                
                 position: absolute;                
@@ -59,7 +88,10 @@
                 position: absolute;
                 margin-top: 2px;
                 padding: 20px;
-                z-index: 1;                
+                z-index: 1;   
+                @media screen and (max-width:700px){
+                  padding: 8px;
+                }                
             }
             
         }
