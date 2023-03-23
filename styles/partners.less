@@ -2,9 +2,15 @@
     background-color: #F8F8F8;
     &__wrapper{
         margin: 0 15px;
+        @media screen and(max-width:800px){
+            padding-bottom: 30px;
+        }
         .partners__social{
             display: grid;
             grid-template: repeat(1, 1fr) / repeat( 6, 1fr);
+            @media screen and(max-width:800px){
+                grid-template: repeat(4, 100px) / repeat( 2, 1fr);
+            }
             .social__img{
                 width: 127px;
                 height: 127px;
@@ -12,9 +18,33 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @media screen and(max-width:800px) {
+                    width: 85px;
+                    height: 85px;                   
+                    &:nth-child(5){
+                        grid-column: 1/3;
+                        grid-row: 2;
+                    } 
+                    &:nth-child(6){
+                        grid-column: 1/3;
+                    }
+                }
                 @media screen and(max-width:1024px){
                     scale: 0.7;
                     margin:28px auto;
+                }
+                @media screen and(max-width:800px){
+                    scale: 1;
+                    margin:15px auto;
+                    &:nth-child(5){
+                        scale: 0.7;
+                    }
+                    &:nth-child(3){
+                        scale: 0.7;
+                    }
+                    &:nth-child(4){
+                        scale: 0.7;
+                    }
                 }
                 img{
                     transition: 0.5s ease;

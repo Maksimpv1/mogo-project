@@ -4,20 +4,30 @@
         margin: 0 15px;
         @media screen and (max-width:1024px) {
             padding: 55px 0;                
-        }   
+        }
+        @media screen and (max-width:800px) {
+            padding: 30px 0;                
+        }      
         .mogo-line{
             margin-top: 24px;
             margin-bottom: 44px;
             @media screen and (max-width:1024px) {
                 margin-top: 20px;
                 margin-bottom: 40px;                
-            }        
+            }   
+            @media screen and (max-width:1024px) {
+                margin-top: 20px;
+                margin-bottom: 20px;                
+            }   
         }
         .discription-centr{
             margin-bottom: 84px;
             @media screen and (max-width:1024px) {
                 margin-bottom: 64px;              
             } 
+            @media screen and (max-width:800px) {
+                margin-bottom: 34px;              
+            }
         }
     }
     &__cards{
@@ -27,16 +37,27 @@
         @media screen and (max-width:1024px){
             column-gap:20px;           
         }
+        @media screen and (max-width:800px){
+            grid-template:repeat(3,1fr) / repeat(1,1fr);  
+            justify-content: center;
+            column-gap:10px;   
+            row-gap: 30px;          
+        }
         .our-team__card{
-            .card-img-shadow{
+            .card-img-shadow{       
                 height: 424px;
                 background-image: url("../images/our-team1.png");
                 background-repeat: no-repeat;
                 background-size: cover;
                 grid-area: auto;
+                margin: 0 auto;
                 @media screen and (max-width:1024px){
                     height: 360px;
-                }                
+                }    
+                @media screen and (max-width:800px){
+                    height: 240px;
+                    width: 290px;
+                }              
                 .our-team__card-social{
                     display: flex;
                     align-items: center;
@@ -44,11 +65,21 @@
                     height: 100%;              
                     background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
                     opacity: 0;
-                    transition: 1s ease;
+                    transition: 1s ease;    
+                    @media screen and (max-width:800px){
+                        background: none;                         
+                        align-items: end;
+                        justify-content: end;
+                        opacity: 1;                  
+                    }                      
                     &:hover{
                         opacity: 0.8;
                         transition: 1s;
                         transform: translate(-16px,-16px);
+                        @media screen and (max-width:800px){                            
+                            opacity: 1;                            
+                            transform: translate(0px,0px);                  
+                        }    
                     }
                     div{
                         width: 42px;
@@ -65,7 +96,17 @@
                                 scale: 0.8;
                                 transform: translate(2px,5px);
                             }
-                        }                     
+                        }
+                        @media screen and (max-width:800px){                            
+                            background-color: #F9EFCF;
+                            &:nth-child(3){                                
+                                margin-left: 1px;
+                                margin-right: 1px;
+                            }
+                            &:nth-child(2){                                
+                                margin-left: 1px;
+                            }                 
+                        }                      
                         &:hover{
                             background-color:#F38281;
                             transition: 0.5s;
@@ -99,6 +140,9 @@
                     @media screen and (max-width:1024px){
                         font-size: 18px;
                         line-height: 21px;
+                    }
+                    @media screen and (max-width:800px){
+                        padding: 15px 0;
                     }
                 }
             }
