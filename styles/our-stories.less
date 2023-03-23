@@ -6,6 +6,9 @@
         @media screen and(max-width:1024px){
             padding: 60px 0;
         }
+        @media screen and(max-width:700px){
+            padding: 30px 0;
+        }
         .mogo-line{
             margin-top: 24px;
             @media screen and(max-width:1024px){
@@ -22,6 +25,11 @@
             margin-top: 36px;
             column-gap: 20px;
         }
+        @media screen and(max-width:700px){
+            grid-template: repeat(3, 1fr) / repeat(1, 1fr);
+            row-gap: 30px;          
+            justify-content: center;
+        }
         .our-stories__card{
             position: relative;
             .stories-card__psevdo{
@@ -31,11 +39,22 @@
                 background-color: #95E1D3;
                 width: 80px;
                 height: 80px;
+                transition: 0.3s ease;
                 @media screen and(max-width:1024px){
                     top: 25%;
                     left: -10px;
                     width: 65px;
                     height: 65px;
+                }
+                @media screen and(max-width:700px){
+                    top: 40%;
+                    left: 0px;
+                    transition: 0.3s ease;
+                }
+                @media screen and(max-width:450px){
+                    top: 25%;
+                    transition: 0.3s;
+                    left: 0px;
                 }
                 div{
                     display: flex;

@@ -1,6 +1,6 @@
-var acord = document.getElementsByClassName("service__acord-btn");
-var i;
 
+var acord = document.getElementsByClassName("service__acord-btn");
+var i; 
 for (i = 0; i < acord.length; i++) {
     acord[i].addEventListener("click", function() {
         var panel = this.nextElementSibling;
@@ -8,8 +8,6 @@ for (i = 0; i < acord.length; i++) {
             panel.style.display = "none";
         } else {
             panel.style.display = "block";
-        }
+        };
     });
-}
-
-
+};
