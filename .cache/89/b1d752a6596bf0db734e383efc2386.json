@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"id":"F42Z","dependencies":[{"name":"D:\\учеба\\Курсы\\mogo-project\\package.json","includedInParent":true,"mtime":1679382149396}],"generated":{"js":"module.exports=\"178d991518538904a0fc7220c2248193.png\";"},"sourceMaps":null,"error":null,"hash":"99da0e2cc542771d9f515080c9474d22","cacheData":{"env":{}}}
-=======
-{"id":"F42Z","dependencies":[{"name":"D:\\учеба\\Курсы\\mogo-project\\package.json","includedInParent":true,"mtime":1679382998711}],"generated":{"js":"module.exports=\"178d991518538904a0fc7220c2248193.png\";"},"sourceMaps":null,"error":null,"hash":"99da0e2cc542771d9f515080c9474d22","cacheData":{"env":{}}}
->>>>>>> main
+{"id":"F42Z","dependencies":[{"name":"D:\\учеба\\Курсы\\mogo-project\\package.json","includedInParent":true,"mtime":1679563022534}],"generated":{"js":"module.exports=\"178d991518538904a0fc7220c2248193.png\";"},"sourceMaps":null,"error":null,"hash":"99da0e2cc542771d9f515080c9474d22","cacheData":{"env":{}}}

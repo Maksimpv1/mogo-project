@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"id":"JKNk","dependencies":[{"name":"D:\\учеба\\Курсы\\mogo-project\\package.json","includedInParent":true,"mtime":1679382149396}],"generated":{"js":"module.exports=\"24a364dbace8ec5d861b60e1ac676c91.png\";"},"sourceMaps":null,"error":null,"hash":"a627620bda912b6f8ca17bd1421023d6","cacheData":{"env":{}}}
-=======
-{"id":"JKNk","dependencies":[{"name":"D:\\учеба\\Курсы\\mogo-project\\package.json","includedInParent":true,"mtime":1679382998711}],"generated":{"js":"module.exports=\"24a364dbace8ec5d861b60e1ac676c91.png\";"},"sourceMaps":null,"error":null,"hash":"a627620bda912b6f8ca17bd1421023d6","cacheData":{"env":{}}}
->>>>>>> main
+{"id":"JKNk","dependencies":[{"name":"D:\\учеба\\Курсы\\mogo-project\\package.json","includedInParent":true,"mtime":1679563022534}],"generated":{"js":"module.exports=\"24a364dbace8ec5d861b60e1ac676c91.png\";"},"sourceMaps":null,"error":null,"hash":"a627620bda912b6f8ca17bd1421023d6","cacheData":{"env":{}}}

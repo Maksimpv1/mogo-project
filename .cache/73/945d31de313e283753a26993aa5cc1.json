@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"id":"KAUa","dependencies":[{"name":"D:\\учеба\\Курсы\\mogo-project\\package.json","includedInParent":true,"mtime":1679382149396}],"generated":{"js":"module.exports=\"28051af036265fd7ddd1bf7a01b6ae44.png\";"},"sourceMaps":null,"error":null,"hash":"6483a7f7d6136bb80a6b3f5ae5b8369e","cacheData":{"env":{}}}
-=======
-{"id":"KAUa","dependencies":[{"name":"D:\\учеба\\Курсы\\mogo-project\\package.json","includedInParent":true,"mtime":1679382998711}],"generated":{"js":"module.exports=\"28051af036265fd7ddd1bf7a01b6ae44.png\";"},"sourceMaps":null,"error":null,"hash":"6483a7f7d6136bb80a6b3f5ae5b8369e","cacheData":{"env":{}}}
->>>>>>> main
+{"id":"KAUa","dependencies":[{"name":"D:\\учеба\\Курсы\\mogo-project\\package.json","includedInParent":true,"mtime":1679563022534}],"generated":{"js":"module.exports=\"28051af036265fd7ddd1bf7a01b6ae44.png\";"},"sourceMaps":null,"error":null,"hash":"6483a7f7d6136bb80a6b3f5ae5b8369e","cacheData":{"env":{}}}

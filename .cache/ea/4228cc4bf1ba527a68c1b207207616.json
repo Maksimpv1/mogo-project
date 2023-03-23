@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"id":"XrM6","dependencies":[{"name":"D:\\учеба\\Курсы\\mogo-project\\package.json","includedInParent":true,"mtime":1679382149396}],"generated":{"js":"module.exports=\"5eb33a7f8d760fe24ffe222a298c3ca1.png\";"},"sourceMaps":null,"error":null,"hash":"d924bdf61e69e03aa564b9dc0bb62545","cacheData":{"env":{}}}
-=======
-{"id":"XrM6","dependencies":[{"name":"D:\\учеба\\Курсы\\mogo-project\\package.json","includedInParent":true,"mtime":1679382998711}],"generated":{"js":"module.exports=\"5eb33a7f8d760fe24ffe222a298c3ca1.png\";"},"sourceMaps":null,"error":null,"hash":"d924bdf61e69e03aa564b9dc0bb62545","cacheData":{"env":{}}}
->>>>>>> main
+{"id":"XrM6","dependencies":[{"name":"D:\\учеба\\Курсы\\mogo-project\\package.json","includedInParent":true,"mtime":1679563022534}],"generated":{"js":"module.exports=\"5eb33a7f8d760fe24ffe222a298c3ca1.png\";"},"sourceMaps":null,"error":null,"hash":"d924bdf61e69e03aa564b9dc0bb62545","cacheData":{"env":{}}}
